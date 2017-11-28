@@ -7,5 +7,5 @@ Okay, now that you have that, you need to actually set up github to be able to u
 The following collection of posts helped me to get something working.  It depends on your machine which will be most useful.
 
 * https://stackoverflow.com/questions/21095054/ssh-key-still-asking-for-password-and-passphrase
-
 * https://help.github.com/articles/working-with-ssh-key-passphrases/
+* https://stackoverflow.com/questions/10622291/keychain-for-ssh-add
