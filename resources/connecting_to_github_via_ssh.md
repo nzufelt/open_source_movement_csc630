@@ -9,3 +9,4 @@ The following collection of posts helped me to get something working.  It depend
 * https://stackoverflow.com/questions/21095054/ssh-key-still-asking-for-password-and-passphrase
 * https://help.github.com/articles/working-with-ssh-key-passphrases/
 * https://stackoverflow.com/questions/10622291/keychain-for-ssh-add
+* [for those use WSL, like Dr Z](https://stackoverflow.com/questions/18404272/running-ssh-agent-when-starting-git-bash-on-windows/45562886#45562886)
