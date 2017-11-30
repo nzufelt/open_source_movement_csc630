@@ -2,7 +2,6 @@
 
 ## Main course resources and related materials
 ### Getting started, or "How to contribute" type articles
-* blog post detailing a simple PR to a markdown reader http://www.hanselman.com/blog/GetInvolvedInOpenSourceTodayHowToContributeAPatchToAGitHubHostedOpenSourceProjectLikeCode52.aspx
 * https://opensource.guide/how-to-contribute/
 * Talk Python to Me podcast https://overcast.fm/+EYZox6-iw
 * Linear Digressions podcast on hacktoberfest http://lineardigressions.com/episodes/2017/10/15/happy-hacktoberfest
@@ -18,6 +17,7 @@
 * https://www.longsight.com/learning-center/history-open-source
 * http://opencommons.uconn.edu/cgi/viewcontent.cgi?article=1009&context=libr_pubs
 * [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html)
+* [Coase's Penguin](https://pdfs.semanticscholar.org/2798/c07f676531e4da9d1b3372c88c37457bd4af.pdf)
 * [this top 9 list](http://royal.pingdom.com/2010/01/15/the-9-most-important-events-in-open-source-history/) plus the other things from the comments:
     * Cathedral and the Bazaar, as above
     * Debian instead of Ubuntu
@@ -47,7 +47,8 @@
 * MAYBE? https://www.sbf5.com/%7Ecduan/technical/git/
 
 ### learning git
-* [Try git](https://try.github.io/levels/1/challenges/1)--HW?
+* [Try git](https://try.github.io/levels/1/challenges/1)--HW
+* [Software Carpentry git introduction](https://swcarpentry.github.io/git-novice/)
 * [Learn git Branching](https://learngitbranching.js.org/)--assumes a basic understanding, draws the visual graphs without actually working with any source code.
 * https://git-scm.com/book/en/v2
 * [Git for ages 4 and up long youtube video](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
@@ -58,7 +59,9 @@
 * [Mastering markdown](https://guides.github.com/features/mastering-markdown/)
 
 ### PRs
-* [jake vdp simple pr](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
+* [jake vdp live sklearn pr](https://www.youtube.com/watch?v=1kA7oD7ftsM&feature=youtu.be#t=1m40s)
+* [jake vdp example pr](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
+* [Blog post](http://www.hanselman.com/blog/GetInvolvedInOpenSourceTodayHowToContributeAPatchToAGitHubHostedOpenSourceProjectLikeCode52.aspx) detailing a simple PR to a markdown reader
 
 ## Ideas
 * clean up harsh English in READMEs
