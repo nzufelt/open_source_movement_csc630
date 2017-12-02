@@ -2,16 +2,17 @@
 
 ## Main course resources and related materials
 ### Getting started, or "How to contribute" type articles
-* https://opensource.guide/how-to-contribute/
-* Talk Python to Me podcast https://overcast.fm/+EYZox6-iw
-* Linear Digressions podcast on hacktoberfest http://lineardigressions.com/episodes/2017/10/15/happy-hacktoberfest
-* 20-min talk on first PR https://channel9.msdn.com/Events/Build/2016/T613
+* [Github's guide on contributing to open source](https://opensource.guide/how-to-contribute/)
+* [Talk Python to Me podcast](https://overcast.fm/+EYZox6-iw)
+* [Linear Digressions podcast on hacktoberfest](http://lineardigressions.com/episodes/2017/10/15/happy-hacktoberfest)
+* 20-minute talk on first PR https://channel9.msdn.com/Events/Build/2016/T613
     * same talk on yt? https://www.youtube.com/watch?v=UTi9ALZxx2E&app=desktop
-* an "Imposter Syndrome Disclaimer" that one can add to your repos https://github.com/adriennefriend/imposter-syndrome-disclaimer
+* [an "Imposter Syndrome Disclaimer" that one can add to your repos](https://github.com/adriennefriend/imposter-syndrome-disclaimer)
 * [awesome-beginners](https://github.com/MunGell/awesome-for-beginners)
 * [Google Code-in competition](https://opensource.googleblog.com/2017/09/announcing-google-code-in-2017.html)
 
 ### History
+Articles on the history of open source
 * [Curious Minds podcast](https://www.cmpod.net/history_of_open_source_pt1/)--Interview with Richard Stallman on the History of Free and Open Source Software, and [part two](https://www.cmpod.net/history-open-source-free-software-pt-2-w-special-guests-richard-stallman-tim-oreilly/)
 * https://en.wikipedia.org/wiki/History_of_free_and_open-source_software
 * https://www.longsight.com/learning-center/history-open-source
@@ -64,13 +65,14 @@
 * [Blog post](http://www.hanselman.com/blog/GetInvolvedInOpenSourceTodayHowToContributeAPatchToAGitHubHostedOpenSourceProjectLikeCode52.aspx) detailing a simple PR to a markdown reader
 
 ## Ideas
-* clean up harsh English in READMEs
-* [awesome-beginners](https://github.com/MunGell/awesome-for-beginners)
-* http://up-for-grabs.net/#/
+* Clean up harsh English in READMEs
+* [awesome-beginners, a list of awesome beginner-friendly projects](https://github.com/MunGell/awesome-for-beginners)
+* http://up-for-grabs.net/, a curated list of tasks intended for new contributors
 * https://www.codetriage.com/
 * https://github.com/showcases/great-for-new-contributors
 * http://www.firsttimersonly.com/
 * python3-ify a library (maintain a new fork)
+   * [An article[(https://docs.python.org/3/howto/pyporting.html] on porting code from Python 2 to 3
 
 ## Extra
 
