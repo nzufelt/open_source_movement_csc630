@@ -32,8 +32,8 @@
 
 ### What to include in your repo
 * [example.py for numpy](https://github.com/numpy/numpy/blob/master/doc/example.py)
-* [Code of conduct (CODE_OF_CONDUCT.md)](https://github.com/rails/rails/blob/master/CODE_OF_CONDUCT.md)
-* [Contributing guidelines (CONTRIBUTING.md)](https://github.com/rails/rails/blob/master/CONTRIBUTING.md)
+* [Rails Code of conduct (CODE_OF_CONDUCT.md)](https://github.com/rails/rails/blob/master/CODE_OF_CONDUCT.md)
+* [Rails Contributing guidelines (CONTRIBUTING.md)](https://github.com/rails/rails/blob/master/CONTRIBUTING.md)
 
 ### Debate re: financing/managing open source
 * https://twitter.com/adamrackis/status/932291293442691073
