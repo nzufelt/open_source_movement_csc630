@@ -65,6 +65,9 @@ Articles on the history of open source
 * [jake vdp example pr](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
 * [Blog post](http://www.hanselman.com/blog/GetInvolvedInOpenSourceTodayHowToContributeAPatchToAGitHubHostedOpenSourceProjectLikeCode52.aspx) detailing a simple PR to a markdown reader
 
+### Licensing
+* [Developer’s Guide to Open Source Licenses](https://www.toptal.com/open-source/developers-guide-to-open-source-licenses)
+
 ## Ideas
 * Clean up harsh English in READMEs
 * [awesome-beginners, a list of awesome beginner-friendly projects](https://github.com/MunGell/awesome-for-beginners)
