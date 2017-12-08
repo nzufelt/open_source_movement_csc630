@@ -33,7 +33,8 @@ Articles on the history of open source
 
 ### What to include in your repo
 * [example.py for numpy](https://github.com/numpy/numpy/blob/master/doc/example.py)
-* Add more!
+* [Rails Code of conduct (CODE_OF_CONDUCT.md)](https://github.com/rails/rails/blob/master/CODE_OF_CONDUCT.md)
+* [Rails Contributing guidelines (CONTRIBUTING.md)](https://github.com/rails/rails/blob/master/CONTRIBUTING.md)
 
 ### Debate re: financing/managing open source
 * https://twitter.com/adamrackis/status/932291293442691073
@@ -63,6 +64,9 @@ Articles on the history of open source
 * [jake vdp live sklearn pr](https://www.youtube.com/watch?v=1kA7oD7ftsM&feature=youtu.be#t=1m40s)
 * [jake vdp example pr](https://www.youtube.com/watch?v=rgbCcBNZcdQ)
 * [Blog post](http://www.hanselman.com/blog/GetInvolvedInOpenSourceTodayHowToContributeAPatchToAGitHubHostedOpenSourceProjectLikeCode52.aspx) detailing a simple PR to a markdown reader
+
+### Licensing
+* [Developer’s Guide to Open Source Licenses](https://www.toptal.com/open-source/developers-guide-to-open-source-licenses)
 
 ## Ideas
 * Clean up harsh English in READMEs
