@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" >
-    <title>CSC630: The Open Source Movement</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <meta name="description" content="CSC630: The Open Source Movement, Phillips Academy Andover, Winter 2018"/>
-    <meta name="keywords" content="computer science, open source" />
-    <meta name="robots" content="index,follow" />
+  <meta charset="utf-8" >
+  <title>CSC630: The Open Source Movement</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <meta name="description" content="CSC630: The Open Source Movement, Phillips Academy Andover, Winter 2018"/>
+  <meta name="keywords" content="computer science, open source" />
+  <meta name="robots" content="index,follow" />
+  <style>
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 30%;
+    }
+  </style>
 </head>
 <body>
 <div id="container">
@@ -32,15 +39,15 @@
           </li>
 
           <li>
-            <code>git add <filename></code>
+            <code>git add &lt;filename&gt;</code>
           </li>
 
           <li>
-            <code>git rm <filename></code>
+            <code>git rm &lt;filename&gt;</code>
           </li>
 
           <li>
-            <code>git reset <filename></code>
+            <code>git reset &lt;filename&gt;</code>
           </li>
 
           <li>
@@ -56,11 +63,14 @@
           </li>
 
           <li>
-            <code>git checkout</code>
+            <a href="https://git-scm.com/docs/git-checkout"><code>git checkout</code></a>: Change the workspace (<em>i.e.</em> the current files in the directory) to those located at the specified commit.  In essence, moves "you" (a.k.a. <code>HEAD</code>) to the commit.  If you add the <code>-b</code> flag, it will create a new branch with the specified name: <code>git checkout -b &lt;new_branch_name&gt;</code>.
+
+            <img src="git_cheatsheet/img/git_checkout.png"/>
+
           </li>
 
           <li>
-            <code>git branch <branchname></code>
+            <code>git branch &lt;branchname&gt;</code>
           </li>
 
           <li>
@@ -72,7 +82,7 @@
           </li>
 
           <li>
-            <code>git merge <branchname></code>
+            <code>git merge &lt;branchname&gt;</code>
           </li>
 
           <li>
@@ -80,7 +90,7 @@
           </li>
 
           <li>
-            <code>git pull <remote_repo> <remote_branch></code>
+            <code>git pull &lt;remote_repo&gt; &lt;remote_branch&gt;</code>
           </li>
 
         </ul>
