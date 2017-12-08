@@ -51,7 +51,10 @@
           </li>
 
           <li>
-            <code>git commit</code>
+            <a href="https://git-scm.com/docs/git-commit"><code>git commit</code></a>: Record your staged changes to the repository (<em>i.e.</em> the files you have added/modified/deleted) as a new tree object of your working copy, which points to its parent commit (if it's not the first). Finally, it points the current branch to your most recent commit.
+            If you add the <code>-m &lt;msg&gt;</code> flag, you can also leave a comment to detail your changes: <code>git commit -m "fixed all the bugs. lol jk, there's more"</code>
+            <img src="https://codewords.recurse.com/images/two/git-from-the-inside-out/8-a2-just-objects-commits-and-refs.png"/>
+            The Git tree after committing "a2" with parent commit "a1."
           </li>
 
           <li>
