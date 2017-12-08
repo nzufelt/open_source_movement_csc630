@@ -90,7 +90,8 @@
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-pull"><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs git fetch and calls git merge to merge retrieved branch heads into current branch (can also use --rebase to run git rebase instead of git merge). Fetches and replays changes from remote branch since it has diverged from the local branch
+            <a href="https://git-scm.com/docs/git-pull"><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs git fetch (with the given parameters) followed by git merge to merge retrieved branch heads into the current branch (using --rebase runs git rebase instead of git merge). Fetches and replays changes from remote branch since it has diverged from the local branch.<br><br>
+            If remote changes overlap with local uncommitted changes, the merge will be automatically canceled.
           </li>
 
         </ul>
