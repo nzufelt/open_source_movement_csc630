@@ -13,6 +13,13 @@
       margin: 0 auto;
       width: 30%;
     }
+    code {
+      background-color: #F9F9F9;
+      border: 1px dashed #8FCFFB;
+      color: black;
+      line-height: 1.1em;
+      padding: 1px;
+    }
   </style>
 </head>
 <body>
@@ -31,9 +38,11 @@
       <article>
         <ul>
           <li>
-            <code>git init</code>
+            <a href="https://git-scm.com/docs/git-init"><code>git init</code></a> This command creates a git repository. More specifically, it creates the <code>.git</code> directory in the current directory with <code>objects</code>, <code>refs/heads</code>, and <code>refs/tags</code>. The reference <code>HEAD</code> will point to the new repository. Keep in mind that this command <b>does not</b> create, set, or push to a remote repository!
           </li>
-
+          <li>
+            <a href="https://git-scm.com/docs/git-init"><code>git clone</code></a> This command clones a remote repository onto your local machine. It will create remote references for each branch in the repository. It will automatically configure <code>remote.origin.url</code> (for pushing) and <code>remote.origin.fetch</code> (for fetching).
+          </li>
           <li>
             <code>git status</code>
           </li>
