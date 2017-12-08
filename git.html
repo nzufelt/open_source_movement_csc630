@@ -52,7 +52,8 @@
           </li>
 
           <li>
-            <code>git commit</code>
+            <a href="https://git-scm.com/docs/git-merge"><code>git commit</code></a>: Joins two or more histories of the code together (<em>i.e.</em> If two individuals are adding to the same development, to bring both edits back into one file, the merge command will update all edits into one branch.) Although, if there are issues with edit overlaps, formely known as a merge conflict, the user will need to fix the overlapping edits before the merge is complete.
+            
           </li>
 
           <li>
@@ -83,7 +84,8 @@
           </li>
 
           <li>
-            <code>git merge &lt;branchname&gt;</code>
+            <a href="https://git-scm.com/docs/git-fetch">
+            <code>git merge &lt;branchname&gt;</code></a>: Fetch branches and all other objects from one or more repositories. Note: fetch does not merge or overwrite local files. 
           </li>
 
           <li>
@@ -91,7 +93,8 @@
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-pull"><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs git fetch and calls git merge to merge retrieved branch heads into current branch (can also use --rebase to run git rebase instead of git merge). Fetches and replays changes from remote branch since it has diverged from the local branch
+            <a href="https://git-scm.com/docs/git-pull"><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs git fetch (with the given parameters) followed by git merge to merge retrieved branch heads into the current branch (using --rebase runs git rebase instead of git merge). Fetches and replays changes from remote branch since it has diverged from the local branch.<br><br>
+            If remote changes overlap with local uncommitted changes, the merge will be automatically canceled.
           </li>
 
         </ul>
