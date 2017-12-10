@@ -38,7 +38,7 @@
       <article>
         <ul>
           <li>
-            <a href="https://git-scm.com/docs/git-init"><code>git init</code></a> This command creates a git repository. More specifically, it creates the <code>.git</code> directory in the current directory with <code>objects</code>, <code>refs/heads</code>, and <code>refs/tags</code>. The reference <code>HEAD</code> will point to the new repository. Keep in mind that this command <b>does not</b> create, set, or push to a remote repository!
+            <a href="https://git-scm.com/docs/git-init"><code>git init</code></a>: Create a new git repository in the working directory. Existing files will <i>not</i> be automatically added to the repository (i.e. they will not be tracked). If a git repository already exists in the working directory, it is reinitialized. More specifically, it creates the <code>.git</code> directory in the current directory with <code>objects</code>, <code>refs/heads</code>, and <code>refs/tags</code>. The reference <code>HEAD</code> will point to the new repository.
           </li>
           <li>
             <a href="https://git-scm.com/docs/git-init"><code>git clone</code></a> This command clones a remote repository onto your local machine. It will create remote references for each branch in the repository. It will automatically configure <code>remote.origin.url</code> (for pushing) and <code>remote.origin.fetch</code> (for fetching).
@@ -48,21 +48,25 @@
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-add"><code>git add &lt;filename&gt;</code></a>: Adds the changed/created files to the index found in the workspace. The add command adds either entire content of files or part of the changes make to the workspace files recursively. The index is a snapshot of the workspace taken after every commit. Note, the <code>git add</code> command will not add files listed in the <code>.gitignore</code> file.
+            <a href="https://git-scm.com/docs/git-add"><code>git add &lt;filename&gt;</code></a>: Adds the changed/created files to the index found in the workspace, to stage the content for its future commit.
           </li>
 
           <li>
-            <a href='https://git-scm.com/docs/git-rm'><code>git rm &lt;filename&gt;</code></a>: Remove a file from git's index, and remove it from the working tree if it exists there. <code>git rm</code> cannot be used to only remove a file from the working tree. <code>rm &lt;filename&gt;</code> (without <code>git</code>) removes the file from only the working tree.
+            <a href='https://git-scm.com/docs/git-rm'><code>git rm &lt;filename&gt;</code></a>: Remove a file from git's index, and remove it from the working tree if it exists there.
           </li>
 
           <li>
-             <a href="https://git-scm.com/docs/git-reset"><code>git reset</code></a>: sets all of your changes since your last commit match back to the last commit. The primary use is <code>git reset --hard</code>, which resets everything and is equivalent to <code>git reset --hard HEAD</code>. You can also only reset trees, indices, and the status of changes made to files.
+             <a href="https://git-scm.com/docs/git-reset"><code>git reset</code></a>: Resets all of the changes since the last commit match back to the last commit. The primary use is <code>git reset --hard</code>, which resets everything.
  &lt;filename&gt;</code>
           </li>
 
           <li>
             <a href="https://git-scm.com/docs/git-commit"><code>git commit</code></a><code>: Saves the latest staged changes into your local repository. You can add a message with your commit describing your changes. Optional flag includes the -b flag which allows you to add a string message with the command. Internally, it also logs a commit object which includes information about the commit.</code>
             <code>
+
+              
+              
+              
           </li>
 
           <li>
@@ -99,7 +103,11 @@
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-merge"><code>git merge &lt;branchname&gt;</code></a>: Adds the changes from the given commits into the current branch. Specifically, this command replays the changes made on the named commit (<em>i.e.</em> <code>git pull topic</code>) and records the result in a new commit.This command is used by <em>git pull</em> to incorporate changes from another repository.
+            <a href="https://git-scm.com/docs/git-fetch">
+            <code>git merge &lt;branchname&gt;</code></a>: Fetch branches and all other objects from one or more repositories. Note: fetch does not merge or overwrite local files. 
+          </li>
+          <li>
+            <a href="https://git-scm.com/docs/git-merge"><code>git merge &lt;branchname&gt;</code></a>: Adds the changes from the given commits into the current branch. Specifically, this command replays the changes made on the named commit (<em>i.e.</em> <code>git pull topic</code>) and records the result in a new commit.  This command is used by <em>git pull</em> to incorporate changes from another repository.
           </li>
 
           <li>
@@ -108,7 +116,7 @@
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-pull"><code>git pull &lt;remote_repo&gt; &lt;remote_branch&gt;</code></a>: Runs git fetch and calls git merge to merge retrieved branch heads into current branch (can also use --rebase to run git rebase instead of git merge). Fetches and replays changes from remote branch since it has diverged from the local branch
+            <a href="https://git-scm.com/docs/git-pull"><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs <code>git fetch</code> (with the given parameters) followed by <code>git merge</code> to merge retrieved branch heads into the current branch.
           </li>
 
         </ul>
