@@ -13,6 +13,13 @@
       margin: 0 auto;
       width: 30%;
     }
+    code {
+      background-color: #F9F9F9;
+      border: 1px dashed #8FCFFB;
+      color: black;
+      line-height: 1.1em;
+      padding: 1px;
+    }
   </style>
 </head>
 <body>
@@ -31,37 +38,43 @@
       <article>
         <ul>
           <li>
-            <a href="https://git-scm.com/docs/git-init"><code>git init</code></a>: create a new git repository in the working directory. Existing files will <i>not</i> be automatically added to the repository (i.e. they will not be tracked). If a git repository already exists in the working directory, it is reinitialized. A <code>.git</code> directory will be created, with subdirectories <code>objects</code>, <code>refs/heads</code>, <code>refs/tags</code>, and necessary template files.
+            <a href="https://git-scm.com/docs/git-init"><code>git init</code></a>: Create a new git repository in the working directory. Existing files will <i>not</i> be automatically added to the repository (i.e. they will not be tracked). If a git repository already exists in the working directory, it is reinitialized. More specifically, it creates the <code>.git</code> directory in the current directory with <code>objects</code>, <code>refs/heads</code>, and <code>refs/tags</code>. The reference <code>HEAD</code> will point to the new repository.
+          </li>
+          <li>
+            <a href="https://git-scm.com/docs/git-init"><code>git clone</code></a> This command clones a remote repository onto your local machine. It will create remote references for each branch in the repository. It will automatically configure <code>remote.origin.url</code> (for pushing) and <code>remote.origin.fetch</code> (for fetching).
+          </li>
+          <li>
+            <a href="https://git-scm.com/docs/git-status"><code>git status</code></a>: Tells you the tree and index status (i.e. whether you're ready to commit or not)
           </li>
 
           <li>
-            <code>git status</code>
+            <a href="https://git-scm.com/docs/git-add"><code>git add &lt;filename&gt;</code></a>: Adds the changed/created files to the index found in the workspace, to stage the content for its future commit.
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-add"><code>git add</code></a><a>: Add content to the index. <code>git add</code> moves the content from the working tree to the index to prepare the context for it's futue commit.</a>
-
+            <a href='https://git-scm.com/docs/git-rm'><code>git rm &lt;filename&gt;</code></a>: Remove a file from git's index, and remove it from the working tree if it exists there.
           </li>
 
           <li>
-            <code>git rm &lt;filename&gt;</code>
+             <a href="https://git-scm.com/docs/git-reset"><code>git reset</code></a>: Resets all of the changes since the last commit match back to the last commit. The primary use is <code>git reset --hard</code>, which resets everything.
+ &lt;filename&gt;</code>
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-reset"><code>git reset &lt;filename&gt;</code></a> - this command resets what HEAD points to and instead points it directly to the file specified.
+            <a href="https://git-scm.com/docs/git-commit"><code>git commit</code></a><code>: Saves the latest staged changes into your local repository. You can add a message with your commit describing your changes. Optional flag includes the -b flag which allows you to add a string message with the command. Internally, it also logs a commit object which includes information about the commit.</code>
+            <code>
+
+              
+              
+              
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-merge"><code>git commit</code></a>: Joins two or more histories of the code together (<em>i.e.</em> If two individuals are adding to the same development, to bring both edits back into one file, the merge command will update all edits into one branch.) Although, if there are issues with edit overlaps, formely known as a merge conflict, the user will need to fix the overlapping edits before the merge is complete.
-            
+            <a href="https://git-scm.com/docs/git-diff"><code>git diff</code></a>: Shows changes between commits, commit and working tree etc: <code>git diff [options] [&lt;commit&gt;] [--] [&lt;path&gt;…​]</code>
           </li>
 
           <li>
-            <code>git diff</code>
-          </li>
-
-          <li>
-            <code>git log</code>
+            <a href="https://git-scm.com/docs/git-log"><code>git log</code></a>: Using git log shows the commit history of the user. The command will show the author of the commit, the date of the commit, and a commit hash that you can use a git checkout command on to view a detached head version of the repo.
           </li>
 
           <li>
@@ -73,28 +86,37 @@
 
           <li>
             <code>git branch &lt;branchname&gt;</code>
+            <p>
+              This command will create a new branch in the current repository,
+              with the name 'branchname'. Without the option branchname parameter,
+              it will list all branches. 
+            </p>
           </li>
 
           <li>
-            <code>git remote</code>
+            <a href="https://git-scm.com/docs/git-remote"><code>git remote</code></a>: Remotes are repositories other than the one on your local disk which you can push your changes into or pull from. Use git remote to manage these repositories. With no arguments, git remote will show a list of the existing remotes. To perform operations on these remotes, use subcommands like add, remove, rename, <em>etc.</em>.</code>.
           </li>
 
           <li>
-            <code>git push</code>
+            <a href="https://git-scm.com/docs/git-push"><code>git push</code></a>: Updates the references (<code>HEAD</code>, <code>master</code>, etc.) on the remote using local references. It sends objects the are present locally but not remotely in order to bring the remote up to date with your local copy. 
+            <img src="git_cheatsheet/img/git_push.png" />
           </li>
 
           <li>
             <a href="https://git-scm.com/docs/git-fetch">
             <code>git merge &lt;branchname&gt;</code></a>: Fetch branches and all other objects from one or more repositories. Note: fetch does not merge or overwrite local files. 
           </li>
-
           <li>
-            <code>git fetch</code>
+            <a href="https://git-scm.com/docs/git-merge"><code>git merge &lt;branchname&gt;</code></a>: Adds the changes from the given commits into the current branch. Specifically, this command replays the changes made on the named commit (<em>i.e.</em> <code>git pull topic</code>) and records the result in a new commit.  This command is used by <em>git pull</em> to incorporate changes from another repository.
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-pull"><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs git fetch (with the given parameters) followed by git merge to merge retrieved branch heads into the current branch (using --rebase runs git rebase instead of git merge). Fetches and replays changes from remote branch since it has diverged from the local branch.<br><br>
-            If remote changes overlap with local uncommitted changes, the merge will be automatically canceled.
+            <a href="https://git-scm.com/docs/git-fetch"><code>git fetch</code></a>: Downloads objects and refs from another repository. Fetch refs from one or more other repositories, along with the objects necessary to complete their histories.
+            The names of refs that are fetched, together with the object names they point at, are written to .git/FETCH_HEAD.
+          </li>
+
+          <li>
+            <a href="https://git-scm.com/docs/git-pull"><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs <code>git fetch</code> (with the given parameters) followed by <code>git merge</code> to merge retrieved branch heads into the current branch.
           </li>
 
         </ul>
