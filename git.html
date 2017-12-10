@@ -51,11 +51,14 @@
           </li>
 
           <li>
-            <code>git commit</code>
+            <a href="https://git-scm.com/docs/git-commit"><code>git commit</code></a>: Record your staged changes to the repository (<em>i.e.</em> the files you have added/modified/deleted) as a new tree object of your working copy, which points to its parent commit (if it's not the first). Finally, it points the current branch to your most recent commit.
+            If you add the <code>-m &lt;msg&gt;</code> flag, you can also leave a comment to detail your changes: <code>git commit -m "fixed all the bugs. lol jk, there's more"</code>
+            <img src="https://codewords.recurse.com/images/two/git-from-the-inside-out/8-a2-just-objects-commits-and-refs.png"/>
+            The Git tree after committing "a2" with parent commit "a1."
           </li>
 
-          <li>
-            <code>git diff</code>
+          <li>            
+            <a href="https://git-scm.com/docs/git-diff" target="_blank"><code>git diff</code></a>: Displays changes between things. For example, changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes between two blob objects, or changes between two files on a disk.
           </li>
 
           <li>
@@ -70,20 +73,15 @@
           </li>
 
           <li>
-            <code>git branch &lt;branchname&gt;</code>
+            <a href="https://git-scm.com/docs/git-branch"><code>git branch &lt;branchname&gt;</code></a>: Create a branch with the <code>branchname</code>. Delete a branch with <code>git branch -d [branch name]</code>
+
           </li>
 
           <li>
-            <code href="https://git-scm.com/docs/git-remote">git remote</code> manages your set of tracked repositories.
-            <code>remote</code> has many different ways to be called. The most commonly used are:
-            <ul>
-            <li><code>git remote add &lt;name&gt; &lt;url&gt;</code> adds a remote named &lt;name&gt; for the repository at &lt;url&gt;.</li>
-            <li><code>git remote rename &lt;old&gt; &lt;new&gt;</code> renames the remote named &lt;old&gt; to &lt;new&gt;</li>
-            <li><code>git remote show &lt;name&gt;</code></li> gives information about the remote &lt;name&gt;.
-            <li><code>git remote remove &lt;name&gt;</code> removes the remote named &lt;name&gt;.</li>
-            </ul>
-            These are fairly simplified commands. For further information on their usage, visit
-              <code>remote</code>'s <a href="https://git-scm.com/docs/git-remote">documentation.</a>
+            <a href="https://git-scm.com/docs/git-remote"><code>git remote</code></a>: Set, edit, and remove "remotes" (variables that hold paths to git repository). For example, instead of saying <code>git push [LONG URL] master</code>, you can say <code>git push [remote name] master</code>:<br>
+            To add a remote: <code>git remote add [remote_name] [remote_url]</code><br>
+            To remove a remote: <code>git remote remove [remote_name]</code><br>
+            To change the name of a remote: <code>git remote rename [old_name] [new_name]</code>
           </li>
 
           <li>
@@ -114,4 +112,3 @@
 </script>
 </body>
 </html>
-

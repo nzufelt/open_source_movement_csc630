@@ -14,9 +14,9 @@
 ### History
 Articles on the history of open source
 * [Curious Minds podcast](https://www.cmpod.net/history_of_open_source_pt1/)--Interview with Richard Stallman on the History of Free and Open Source Software, and [part two](https://www.cmpod.net/history-open-source-free-software-pt-2-w-special-guests-richard-stallman-tim-oreilly/)
-* [Wikipedia's History of Free and Open Source Software](https://en.wikipedia.org/wiki/History_of_free_and_open-source_software)
+* https://en.wikipedia.org/wiki/History_of_free_and_open-source_software
 * https://www.longsight.com/learning-center/history-open-source
-* [A paper on the history of OS from the University of Connecticut](http://opencommons.uconn.edu/cgi/viewcontent.cgi?article=1009&context=libr_pubs)
+* http://opencommons.uconn.edu/cgi/viewcontent.cgi?article=1009&context=libr_pubs
 * [The Cathedral and the Bazaar](http://www.catb.org/esr/writings/cathedral-bazaar/cathedral-bazaar/index.html)
 * [Coase's Penguin](https://pdfs.semanticscholar.org/2798/c07f676531e4da9d1b3372c88c37457bd4af.pdf)
 * [this top 9 list](http://royal.pingdom.com/2010/01/15/the-9-most-important-events-in-open-source-history/) plus the other things from the comments:
@@ -28,7 +28,7 @@ Articles on the history of open source
 * Useful book on the history? http://www.oreilly.com/openbook/opensources/book/index.html
 * https://en.wikipedia.org/wiki/Open-source_software_movement
 * awful timeline website but maybe has some useful things https://create.piktochart.com/output/2385023-history-of-the-open-source-movem
-* [Linux](https://en.wikipedia.org/wiki/History_of_Linux#The_creation_of_Linux)
+* linux https://en.wikipedia.org/wiki/History_of_Linux#The_creation_of_Linux
 * google and android?
 
 ### What to include in your repo
@@ -45,7 +45,7 @@ Articles on the history of open source
 * https://techcrunch.com/2016/02/09/the-money-in-open-source-software/
 
 ### git internals
-* [Git from the inside out](https://codewords.recurse.com/issues/two/git-from-the-inside-out)
+* https://codewords.recurse.com/issues/two/git-from-the-inside-out
 * MAYBE? https://www.sbf5.com/%7Ecduan/technical/git/
 
 ### learning git
