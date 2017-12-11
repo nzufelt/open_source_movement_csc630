@@ -1,0 +1,14 @@
+/* include IBM fonts via their CSS file 
+(it's all FOSS, don't worry!)*/
+
+@import("ibm-type.min.css");
+
+/* make default IBM Plex Sans */
+* {
+    font-family: "IBM Plex Sans";
+}
+
+/* make monospaced stuff show up as monospaced */
+code, pre {
+    font-family: "IBM Plex Mono";
+}
