@@ -1,0 +1,9 @@
+@import("https://cdnjs.cloudflare.com/ajax/libs/IBM-type/0.5.3/css/ibm-type.min.css");
+
+* {
+    font-family: "IBM Plex Sans Text", sans-serif;
+}
+
+code, pre {
+    font-family: "IBM Plex Mono Text", monospaced;
+}
