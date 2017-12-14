@@ -41,7 +41,7 @@
             <a href="https://git-scm.com/docs/git-init"><code>git init</code></a>: Create a new git repository in the working directory. Existing files will <i>not</i> be automatically added to the repository (i.e. they will not be tracked). If a git repository already exists in the working directory, it is reinitialized. More specifically, it creates the <code>.git</code> directory in the current directory with <code>objects</code>, <code>refs/heads</code>, and <code>refs/tags</code>. The reference <code>HEAD</code> will point to the new repository.
           </li>
           <li>
-            <a href="https://git-scm.com/docs/git-init"><code>git clone</code></a> This command clones a remote repository onto your local machine. It will create remote references for each branch in the repository. It will automatically configure <code>remote.origin.url</code> (for pushing) and <code>remote.origin.fetch</code> (for fetching).
+            <a href="https://git-scm.com/docs/git-clone"><code>git clone</code></a> This command clones a remote repository onto your local machine. It will create remote references for each branch in the repository. It will automatically configure <code>remote.origin.url</code> (for pushing) and <code>remote.origin.fetch</code> (for fetching).
           </li>
           <li>
             <a href="https://git-scm.com/docs/git-status"><code>git status</code></a>: Tells you the tree and index status (i.e. whether you're ready to commit or not)
@@ -61,11 +61,14 @@
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-commit"><code>git commit</code></a>: Saves the latest staged changes into your local repository. You can add a message with your commit describing your changes. Optional flag includes the -b flag which allows you to add a string message with the command. Internally, it also logs a commit object which includes information about the commit.
+            <a href="https://git-scm.com/docs/git-commit"><code>git commit</code></a>: Record your staged changes to the repository (<em>i.e.</em> the files you have added/modified/deleted) as a new tree object of your working copy, which points to its parent commit (if it's not the first). Finally, it points the current branch to your most recent commit.
+            If you add the <code>-m &lt;msg&gt;</code> flag, you can also leave a comment to detail your changes: <code>git commit -m "fixed all the bugs. lol jk, there's more"</code>
+            <img src="https://codewords.recurse.com/images/two/git-from-the-inside-out/8-a2-just-objects-commits-and-refs.png"/>
+            The Git tree after committing "a2" with parent commit "a1."
           </li>
 
-          <li>
-            <a href="https://git-scm.com/docs/git-diff"><code>git diff</code></a>: Shows changes between commits, commit and working tree etc: <code>git diff [options] [&lt;commit&gt;] [--] [&lt;path&gt;…​]</code>
+          <li>            
+            <a href="https://git-scm.com/docs/git-diff" target="_blank"><code>git diff</code></a>: Displays changes between things. For example, changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes between two blob objects, or changes between two files on a disk.
           </li>
 
           <li>
@@ -80,27 +83,21 @@
           </li>
 
           <li>
-            <code>git branch &lt;branchname&gt;</code>
-            <p>
-              This command will create a new branch in the current repository,
-              with the name 'branchname'. Without the option branchname parameter,
-              it will list all branches.
-            </p>
+            <a href="https://git-scm.com/docs/git-branch"><code>git branch &lt;branchname&gt;</code></a>: Create a branch with the <code>branchname</code>. Delete a branch with <code>git branch -d [branch name]</code>
           </li>
 
           <li>
-            <a href="https://git-scm.com/docs/git-remote"><code>git remote</code></a>: Remotes are repositories other than the one on your local disk which you can push your changes into or pull from. Use git remote to manage these repositories. With no arguments, git remote will show a list of the existing remotes. To perform operations on these remotes, use subcommands like add, remove, rename, <em>etc.</em>.</code>.
+            <a href="https://git-scm.com/docs/git-remote"><code>git remote</code></a>: Set, edit, and remove "remotes" (variables that hold paths to git repository). For example, instead of saying <code>git push [LONG URL] master</code>, you can say <code>git push [remote name] master</code>:<br>
+            To add a remote: <code>git remote add [remote_name] [remote_url]</code><br>
+            To remove a remote: <code>git remote remove [remote_name]</code><br>
+            To change the name of a remote: <code>git remote rename [old_name] [new_name]</code>
           </li>
 
           <li>
             <a href="https://git-scm.com/docs/git-push"><code>git push</code></a>: Updates the references (<code>HEAD</code>, <code>master</code>, etc.) on the remote using local references. It sends objects the are present locally but not remotely in order to bring the remote up to date with your local copy.
             <img src="git_cheatsheet/img/git_push.png" />
           </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-fetch">
-            <code>git merge &lt;branchname&gt;</code></a>: Fetch branches and all other objects from one or more repositories. Note: fetch does not merge or overwrite local files.
-          </li>
+  
           <li>
             <a href="https://git-scm.com/docs/git-merge"><code>git merge &lt;branchname&gt;</code></a>: Adds the changes from the given commits into the current branch. Specifically, this command replays the changes made on the named commit (<em>i.e.</em> <code>git pull topic</code>) and records the result in a new commit.  This command is used by <em>git pull</em> to incorporate changes from another repository.
           </li>
