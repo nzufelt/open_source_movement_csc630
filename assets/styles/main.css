@@ -191,6 +191,9 @@ main section {
 }
 
 main section h3 {
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
   margin-bottom: 20px;
   display: block;
 }
