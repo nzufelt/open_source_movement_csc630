@@ -162,6 +162,7 @@ main.splash nav a {
 
 main.splash nav a:hover {
   background-color: black;
+  border-color: black;
   color: white;
 }
 
