@@ -54,6 +54,7 @@ header h1 {
   font-size: 16px;
   display: inline;
   font-weight: 500;
+  color: #222222;
 }
 
 header h1 a {
@@ -190,7 +191,6 @@ main section {
 }
 
 main section h3 {
-  font-size: 16px;
   margin-bottom: 20px;
   display: block;
 }
