@@ -1,108 +1,102 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" >
+  <head>
+    <meta charset='utf-8' >
     <title>CSC630: The Open Source Movement</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <meta name="description" content="CSC630: The Open Source Movement, Phillips Academy Andover, Winter 2018"/>
-    <meta name="keywords" content="computer science, open source" />
-    <meta name="robots" content="index,follow" />
-</head>
-<body>
-<div id="container">
-  <header>
-    <h1>The Open Source Movement</h1>
-    <h3>Assignments</h3>
-  </header>
-  <nav>
-    <a href="resources.html">Resources</a>
-    <a href="assignments.html">Assignments</a>
-    <a href="git.html">git cheatsheet</a>
-  </nav>
-  <main id="content">
-    <section id="section1">
-      <article>
-        <ol>
-          <li>
-            Listen to <a href="https://www.cmpod.net/history_of_open_source_pt1/">this podcast</a>, and be prepared to discuss in class.
-          </li>
-          <li>
+    <link rel='stylesheet' type='text/css' href='./assets/styles/main.css' />
+    <meta name='description' content='CSC630: The Open Source Movement, Phillips Academy Andover, Winter 2018'/>
+    <meta name='keywords' content='computer science, open source' />
+    <meta name='robots' content='index,follow' />
+  </head>
+  <body>
+    <div id='wrapper'>
+      <header>
+        <div class='gradient'></div>
+        <div class='content'>
+          <h1><a href='index.html'>CSC630: The Open Source Movement</a> // Assignments <span class='right'><p>Phillips Academy Andover &emsp;&#x25AA;&emsp; Winter 2018</p></span></h1>
+        </div>
+        <div class='nav-wrapper'>
+          <nav>
+            <a href='assignments.html'>Assignments</a>
+            <a href='resources.html'>Resources</a>
+            <a href='git.html'>Git Cheatsheet</a>
+            <a href='https://github.com/nzufelt/open_source_movement_csc630/' class='right'>On GitHub</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <div class='content'>
+          <section>
+            <h3>Quandaries of Open Source</h3>
+            <a href="assignments/Quandaries_of_Open_Source_paper.html">Handout</a> for the paper.
+          </section>
+          <section>
+            <h3>Open Source Project</h3>
+            <a href="assignments/Project.html">Handout</a> for the project.
+          </section>
+          <section>
+            <h3>December 13-14, 2017</h3>
             <ol>
               <li>
-                Listen to <a href="https://www.cmpod.net/history-open-source-free-software-pt-2-w-special-guests-richard-stallman-tim-oreilly/">this podcast</a>, and be prepared to discuss in class.
-              </li>
-              <li>
-                <a href="assignments/DAGshort.pdf">Short DAG assignment</a>
+                Find a popular open source library, and prepare to "show and tell" that library to a partner tomorrow.  What would you use the library for?  What does the repository consist of? Understand what it would be like to contribute to this library&mdash;what is required of contributors, what sort of issues/pull requests are you seeing for it?  As you're doing this, it might be helpful to start paying attention for tomorrow night's homework.
               </li>
             </ol>
-            <li>
-              <ol>
-                <li>
-                  <a href="assignments/DAGs_and_hashes.pdf">DAG and hashes worksheet</a>
-                </li>
-                <li>
-                  Make a github account (if you haven't already)
-                </li>
-                <li>
-                  <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Install git</a>
-                </li>
-                <li>
-                  Work through <a href="https://try.github.io/levels/1/challenges/1">try git</a>&mdash;an interactive git tutorial.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Work through <a href="https://codewords.recurse.com/issues/two/git-from-the-inside-out">this essay</a> describing the internals of git.
-            </li>
-            <li>
-              <ol>
-                <li>
-                  Read through this <a href="https://opensource.guide/starting-a-project/">guide to starting an open source project</a>.  In particular, make a list of each of the important non-code elements of making an open source repository, and why they should be present.  See <a href="https://github.com/nzufelt/open_source_movement_csc630/issues/5">this issue</a>.
-                </li>
-                <li>
-                  Read through this <a href="https://www.toptal.com/open-source/developers-guide-to-open-source-licenses">guide to open source licenses</a>.  It looks long, but you don't need to read the section on the author's synopses of each license (which is the longest part).  But read up to that, glance through it, and then read the closing commentary.
-                </li>
-                <li>
-                  After doing the above, bookmark <a href="https://choosealicense.com/">choosealicense.com</a> and peruse it.  This is a great tool to keep your job of licensing as simple as possible.  You will likely forget which is which and need a reminder at some point in the future.
-                </li>
-                <li>
-                  Using the above two resources, be able to tell me: For the "main 3" open source licenses (GNU GPL, Apache, MIT), describe an innocent-seeming action that would not be allowed by the license, in contrast to the other two.  Also, be able to answer the question, "what would happen if I don't bother to license my repository?"
-                </li>
-              </ol>
-            </li>
-            <li>
-              <ol>
-                <li>
-                  <a href="http://www.unterstein.net/su/docs/CathBaz.pdf">The Cathedral and the Bazaar</a> Sections 1 through 6, approximately pages 1-16.  Also, be sure to understand the <a href="https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar">impact</a> that the essay had.
-                </li>
-                <li>
-                  Find a popular open source library, and prepare to "show and tell" that library to a partner tomorrow.  What would you use the library for?  What does the repository consist of? Understand what it would be like to contribute to this library&mdash;what is required of contributors, what sort of issues/pull requests are you seeing for it?  As you're doing this, it might be helpful to start paying attention for tomorrow night's homework.
-                </li>
-              </ol>
-            </li>
-            <li>
-              Find an issue on an open source repository <em>not connected to our class</em> that you could fix.  This could absolutely be an improvement to documentation!  You needn't fix it yet, but that will be the homework in the future, so you could go ahead and do it tonight if you wanted to.
-            </li>
-            <li>
-              Continue to work on your pull request.
-            </li>
-            <li>
-              Continue to work on your pull request. (Due 12/15 after class.)
-            </li>
-          </li>
-        </ol>
-        <h3>Quandaries of Open Source</h3>
-        <a href="assignments/Quandaries_of_Open_Source_paper.html">Handout</a> for the paper.
-        <h3>Open Source Project</h3>
-        <a href="assignments/Project.html">Handout</a> for the project.
-      </article>
-    </section>
-  </main>
-  <footer>
-  </footer>
+          </section>
+          <section>
+            <h3>December 12, 2017</h3>
+            <ol>
+              <li>
+                Find an issue on an open source repository <em>not connected to our class</em> that you could fix.  This could absolutely be an improvement to documentation!  You needn't fix it yet, but that will be the homework in the future, so you could go ahead and do it tonight if you wanted to.
+              </li>
+              <li>
+                <a href="http://www.unterstein.net/su/docs/CathBaz.pdf">The Cathedral and the Bazaar</a> Sections 1 through 6, approximately pages 1-16.  Also, be sure to understand the <a href="https://en.wikipedia.org/wiki/The_Cathedral_and_the_Bazaar">impact</a> that the essay had.
+              </li>
+            </ol>
+          </section>
 
-</div>
-<script src="scripts.js">
-</script>
-</body>
+          <section>
+            <h3>December 11, 2017</h3>
+            <ol>
+              <li>Read through this <a href='https://opensource.guide/starting-a-project/'>guide to starting an open source project</a>. In particular, make a list of each of the important non-code elements of making an open source repository, and why they should be present. See <a href='https://github.com/nzufelt/open_source_movement_csc630/issues/5'>this issue</a>.</li>
+              <li>Read through this <a href='https://www.toptal.com/open-source/developers-guide-to-open-source-licenses'>guide to open source licenses</a>. It looks long, but you don't need to read the section on the author's synopses of each license (which is the longest part). But read up to that, glance through it, and then read the closing commentary.</li>
+              <li>After doing the above, bookmark <a href='https://choosealicense.com/'>choosealicense.com</a> and peruse it. This is a great tool to keep your job of licensing as simple as possible. You will likely forget which is which and need a reminder at some point in the future.</li>
+              <li>Using the above two resources, be able to tell me: For the 'main 3' open source licenses (GNU GPL, Apache, MIT), describe an innocent-seeming action that would not be allowed by the license, in contrast to the other two. Also, be able to answer the question, 'what would happen if I don't bother to license my repository?'</li>
+            </ol>
+          </section>
+          <section>
+            <h3>December 8, 2017</h3>
+            <ol>
+              <li>Work through <a href="https://codewords.recurse.com/issues/two/git-from-the-inside-out">this essay</a> describing the internals of git.</li>
+            </ol>
+          </section>
+          <section>
+            <h3>December 6-7, 2017</h3>
+            <ol>
+              <li><a href='assignments/DAGs_and_hashes.pdf'>DAG and hashes worksheet</a></li>
+              <li>Make a GitHub account (if you haven't already)</li>
+              <li><a href='https://git-scm.com/book/en/v2/Getting-Started-Installing-Git'>Install git</a></li>
+              <li>Work through <a href='https://try.github.io/levels/1/challenges/1'>try git</a>&mdash;an interactive git tutorial.</li>
+            </ol>
+          </section>
+          <section>
+            <h3>December 5, 2017</h3>
+            <ol>
+              <li>Listen to <a href='https://www.cmpod.net/history-open-source-free-software-pt-2-w-special-guests-richard-stallman-tim-oreilly/'>this podcast</a>, and be prepared to discuss in class.</li>
+              <li><a href='assignments/DAGshort.pdf'>Short DAG assignment</a></li>
+            </ol>
+          </section>
+          <section>
+            <h3>December 4, 2017</h3>
+            <ol>
+              <li>Listen to <a href='https://www.cmpod.net/history_of_open_source_pt1/'>this podcast</a>, and be prepared to discuss in class.</li>
+            </ol>
+          </section>
+        </div>
+      </main>
+      <footer>
+        <p>Made with ❤ at Phillips Academy.</p>
+      </footer>
+    </div>
+    <script src='scripts/header.js'></script>
+    </body>
 </html>
