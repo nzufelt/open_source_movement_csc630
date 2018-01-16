@@ -1,125 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8" >
-  <title>CSC630: The Open Source Movement</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-  <meta name="description" content="CSC630: The Open Source Movement, Phillips Academy Andover, Winter 2018"/>
-  <meta name="keywords" content="computer science, open source" />
-  <meta name="robots" content="index,follow" />
-  <style>
-    img {
-      display: block;
-      margin: 0 auto;
-      width: 30%;
-    }
-    code {
-      background-color: #F9F9F9;
-      border: 1px dashed #8FCFFB;
-      color: black;
-      line-height: 1.1em;
-      padding: 1px;
-    }
-  </style>
-</head>
-<body>
-<div id="container">
-  <header>
-    <h1>The Open Source Movement</h1>
-    <h3><code>git</code> cheatsheet</h3>
-  </header>
-  <nav>
-    <a href="resources.html">Resources</a>
-    <a href="assignments.html">Assignments</a>
-    <a href="git.html">git cheatsheet</a>
-  </nav>
-  <main id="content">
-    <section id="section1">
-      <article>
+  <head>
+    <meta charset='utf-8' >
+    <title>CSC630: The Open Source Movement</title>
+    <link rel='stylesheet' type='text/css' href='./assets/styles/main.css' />
+    <meta name='description' content='CSC630: The Open Source Movement, Phillips Academy Andover, Winter 2018'/>
+    <meta name='keywords' content='computer science, open source' />
+    <meta name='robots' content='index,follow' />
+  </head>
+  <body>
+    <div id='wrapper'>
+      <header>
+        <div class='gradient'></div>
+        <div class='content'>
+          <h1><a href='index.html'>CSC630: The Open Source Movement</a> // Git Cheatsheet <span class='right'><p>Phillips Academy Andover &emsp;&#x25AA;&emsp; Winter 2018</p></span></h1>
+        </div>
+        <div class='nav-wrapper'>
+          <nav>
+            <a href='assignments.html'>Assignments</a>
+            <a href='resources.html'>Resources</a>
+            <a href='git.html'>Git Cheatsheet</a>
+            <a href='https://github.com/nzufelt/open_source_movement_csc630/' class='right'>On GitHub</a>
+          </nav>
+        </div>
+      </header>
+      <main class='three-column'>
         <ul>
-          <li>
-            <a href="https://git-scm.com/docs/git-init"><code>git init</code></a>: Create a new git repository in the working directory. Existing files will <i>not</i> be automatically added to the repository (i.e. they will not be tracked). If a git repository already exists in the working directory, it is reinitialized. More specifically, it creates the <code>.git</code> directory in the current directory with <code>objects</code>, <code>refs/heads</code>, and <code>refs/tags</code>. The reference <code>HEAD</code> will point to the new repository.
-          </li>
-          <li>
-            <a href="https://git-scm.com/docs/git-clone"><code>git clone</code></a> This command clones a remote repository onto your local machine. It will create remote references for each branch in the repository. It will automatically configure <code>remote.origin.url</code> (for pushing) and <code>remote.origin.fetch</code> (for fetching).
-          </li>
-          <li>
-            <a href="https://git-scm.com/docs/git-status"><code>git status</code></a>: Tells you the tree and index status (i.e. whether you're ready to commit or not)
-          </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-add"><code>git add &lt;filename&gt;</code></a>: Adds the changed/created files to the index found in the workspace, to stage the content for its future commit.
-          </li>
-
-          <li>
-            <a href='https://git-scm.com/docs/git-rm'><code>git rm &lt;filename&gt;</code></a>: Remove a file from git's index, and remove it from the working tree if it exists there.
-          </li>
-
-          <li>
-             <a href="https://git-scm.com/docs/git-reset"><code>git reset</code></a>: Resets all of the changes since the last commit match back to the last commit. The primary use is <code>git reset --hard</code>, which resets everything.
- &lt;filename&gt;</code>
-          </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-commit"><code>git commit</code></a>: Record your staged changes to the repository (<em>i.e.</em> the files you have added/modified/deleted) as a new tree object of your working copy, which points to its parent commit (if it's not the first). Finally, it points the current branch to your most recent commit.
-            If you add the <code>-m &lt;msg&gt;</code> flag, you can also leave a comment to detail your changes: <code>git commit -m "fixed all the bugs. lol jk, there's more"</code>
+          <li><a href='https://git-scm.com/docs/git-init'><code>git init</code></a> Create a new git repository in the working directory. Existing files will <i>not</i> be automatically added to the repository (i.e. they will not be tracked). If a git repository already exists in the working directory, it is reinitialized. More specifically, it creates the <code>.git</code> directory in the current directory with <code>objects</code>, <code>refs/heads</code>, and <code>refs/tags</code>. The reference <code>HEAD</code> will point to the new repository.</li>
+          <li><a href='https://git-scm.com/docs/git-clone'><code>git clone</code></a> This command clones a remote repository onto your local machine. It will create remote references for each branch in the repository. It will automatically configure <code>remote.origin.url</code> (for pushing) and <code>remote.origin.fetch</code> (for fetching).</li>
+          <li><a href='https://git-scm.com/docs/git-status'><code>git status</code></a> Tells you the tree and index status (i.e. whether you're ready to commit or not)</li>
+          <li><a href='https://git-scm.com/docs/git-add'><code>git add &lt;filename&gt;</code></a> Adds the changed/created files to the index found in the workspace, to stage the content for its future commit.</li>
+          <li><a href='https://git-scm.com/docs/git-rm'><code>git rm &lt;filename&gt;</code></a> Remove a file from git's index, and remove it from the working tree if it exists there.</li>
+          <li><a href='https://git-scm.com/docs/git-reset'><code>git reset</code></a> Resets all of the changes since the last commit match back to the last commit. The primary use is <code>git reset --hard</code>, which resets everything.</code></li>
+          <li><a href="https://git-scm.com/docs/git-commit"><code>git commit</code></a>: Record your staged changes to the repository (<em>i.e.</em> the files you have added/modified/deleted) as a new tree object of your working copy, which points to its parent commit (if it's not the first). Finally, it points the current branch to your most recent commit. If you add the <code>-m &lt;msg&gt;</code> flag, you can also leave a comment to detail your changes: <code>git commit -m "fixed all the bugs. lol jk, there's more"</code>
             <img src="https://codewords.recurse.com/images/two/git-from-the-inside-out/8-a2-just-objects-commits-and-refs.png"/>
             The Git tree after committing "a2" with parent commit "a1."
           </li>
-
-          <li>            
-            <a href="https://git-scm.com/docs/git-diff" target="_blank"><code>git diff</code></a>: Displays changes between things. For example, changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes between two blob objects, or changes between two files on a disk.
+          <li><a href="https://git-scm.com/docs/git-diff" target="_blank"><code>git diff</code></a>: Displays changes between states in your repository. For example, changes between the working tree and the index or a tree, changes between the index and a tree, changes between two trees, changes between two blob objects, or changes between two files on a disk.</li>
+          <li><a href='https://git-scm.com/docs/git-log'><code>git log</code></a> Shows the commit history. The command will show the author of the commit, the date of the commit, and a commit hash that you can use a git checkout command on to view a detached head version of the repo.</li>
+          <li><a href='https://git-scm.com/docs/git-branch'><code>git branch &lt;branchname&gt;</code></a> This command will create a new branch in the current repository, with the name <code>branchname</code>. Without specifying a branch name, it will list all branches.</p></li>
+          <li><a href='https://git-scm.com/docs/git-checkout'><code>git checkout</code></a> Change the workspace (<em>i.e.</em> the current files in the directory) to those located at the specified commit.  In essence, moves 'you' (a.k.a. <code>HEAD</code>) to the commit.  If you add the <code>-b</code> flag, it will create a new branch with the specified name: <code>git checkout -b &lt;new_branch_name&gt;</code>.
+            <img src='./assets/images/git_cheatsheet/git_checkout.png'/>
           </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-log"><code>git log</code></a>: Using git log shows the commit history of the user. The command will show the author of the commit, the date of the commit, and a commit hash that you can use a git checkout command on to view a detached head version of the repo.
+          <li><a href="https://git-scm.com/docs/git-remote"><code>git remote</code></a>: Set, edit, and remove "remotes" (variables that hold urls to git repository). For example, instead of saying <code>git push [LONG URL] master</code>, you can say <code>git push [remote name] master</code>. The <code>git remote</code> command has subcommands you can use to manipulate remotes&mdash;<em>e.g.</em> to add a remote, use <code>git remote add [remote_name] [remote_url]</code>.</li>
+          <li><a href='https://git-scm.com/docs/git-push'><code>git push</code></a> Bring the remote up to date with your local copy, by updating the references (<code>HEAD</code>, <code>master</code>, etc.) on the remote using local references and sending objects that are present locally but not remotely.
+            <img src='./assets/images/git_cheatsheet/git_push.png' />
           </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-checkout"><code>git checkout</code></a>: Change the workspace (<em>i.e.</em> the current files in the directory) to those located at the specified commit.  In essence, moves "you" (a.k.a. <code>HEAD</code>) to the commit.  If you add the <code>-b</code> flag, it will create a new branch with the specified name: <code>git checkout -b &lt;new_branch_name&gt;</code>.
-
-            <img src="git_cheatsheet/img/git_checkout.png"/>
-
-          </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-branch"><code>git branch &lt;branchname&gt;</code></a>: Create a branch with the <code>branchname</code>. Delete a branch with <code>git branch -d [branch name]</code>
-          </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-remote"><code>git remote</code></a>: Set, edit, and remove "remotes" (variables that hold paths to git repository). For example, instead of saying <code>git push [LONG URL] master</code>, you can say <code>git push [remote name] master</code>:<br>
-            To add a remote: <code>git remote add [remote_name] [remote_url]</code><br>
-            To remove a remote: <code>git remote remove [remote_name]</code><br>
-            To change the name of a remote: <code>git remote rename [old_name] [new_name]</code>
-          </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-push"><code>git push</code></a>: Updates the references (<code>HEAD</code>, <code>master</code>, etc.) on the remote using local references. It sends objects the are present locally but not remotely in order to bring the remote up to date with your local copy.
-            <img src="git_cheatsheet/img/git_push.png" />
-          </li>
-  
-          <li>
-            <a href="https://git-scm.com/docs/git-merge"><code>git merge &lt;branchname&gt;</code></a>: Adds the changes from the given commits into the current branch. Specifically, this command replays the changes made on the named commit (<em>i.e.</em> <code>git pull topic</code>) and records the result in a new commit.  This command is used by <em>git pull</em> to incorporate changes from another repository.
-          </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-fetch"><code>git fetch</code></a>: Downloads objects and refs from another repository. Fetch refs from one or more other repositories, along with the objects necessary to complete their histories.
-            The names of refs that are fetched, together with the object names they point at, are written to .git/FETCH_HEAD.
-          </li>
-
-          <li>
-            <a href="https://git-scm.com/docs/git-pull"><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs <code>git fetch</code> (with the given parameters) followed by <code>git merge</code> to merge retrieved branch heads into the current branch.
-          </li>
-
+          <li><a href="https://git-scm.com/docs/git-fetch"><code>git fetch</code></a>: Downloads objects and refs from another repository. Fetch refs from one or more other repositories, along with the objects necessary to complete their histories.</li>
+          <li><a href='https://git-scm.com/docs/git-merge'><code>git merge &lt;branchname&gt;</code></a> Adds the changes from the given commits into the current branch. Specifically, this command replays the changes made on the named commit (<em>i.e.</em> <code>git pull topic</code>) and records the result in a new commit.  This command is used by <em>git pull</em> by default to incorporate changes from another repository.</li>
+          <li><a href='https://git-scm.com/docs/git-pull'><code>git pull</a> &lt;remote_repo&gt; &lt;remote_branch&gt;</code>: Runs <code>git fetch</code> (with the given parameters) followed by <code>git merge</code> to merge retrieved branch heads into the current branch.</li>
         </ul>
-      </article>
-    </section>
-  </main>
-  <footer>
-  </footer>
-
-</div>
-<script src="scripts.js">
-</script>
-</body>
+      </main>
+      <footer>
+        <p>Made with ❤ at Phillips Academy.</p>
+      </footer>
+    </div>
+    <script src='scripts/header.js'></script>
+  </body>
 </html>
