@@ -1,3 +1,4 @@
+
 var nav = document.getElementsByTagName('nav')[0]
 var deltaHeight = document.getElementsByTagName('header')[0].offsetHeight - nav.offsetHeight;
 
