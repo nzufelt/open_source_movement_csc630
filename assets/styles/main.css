@@ -216,7 +216,7 @@ main section ul li {
 }
 
 main ul li a:first-of-type {
-  text-decoration: none;
+  text-decoration: underline;
   display: block;
   margin-bottom: 20px;
   font-size: 15px;
