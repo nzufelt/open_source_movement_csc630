@@ -4,6 +4,7 @@
       <meta charset='utf-8' >
       <title>CSC630: The Open Source Movement</title>
       <link rel='stylesheet' type='text/css' href='assets/styles/main.css' />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <meta name='description' content='CSC630: The Open Source Movement, Phillips Academy Andover, Winter 2018'/>
       <meta name='keywords' content='computer science, open source' />
       <meta name='robots' content='index,follow' />
@@ -27,4 +28,57 @@
       </main>
     </div>
   </body>
+  <script>
+    (function($) {
+        function gasFlame() {
+            // Credits for source goes to Zachary Johnson
+            // http://www.zachstronaut.com
+            // December 2009
+            var colors = ['#fff', '#99f', '#00f', '#009', '#f90'];
+            if (Math.random() > 0.90) {
+                colors.push(colors[4]);
+            }
+            var hv = 0.04,
+                textShadows = [],
+                c = 0,
+                h = 0,
+                s = 0;
+
+            while (c < colors.length - 1) {
+                s = 2 + Math.round(Math.random() * 2);
+
+                while (s--) {
+                    shadow = '0 ' + h + 'em ' + -h + 'em ' + colors[c];
+                    textShadows.push(shadow);
+                    h -= hv;
+                }
+                c++;
+            }
+            $(this).css({
+                color: colors[0],
+                textShadow: textShadows.join(', ')
+            });
+        }
+
+        // Zachary Johnson
+        // http://www.zachstronaut.com
+        // December 2009
+        $.fn.ignite = function() {
+            return this.each(function() {
+                var letters = $(this).text().split('');
+                $(this).html('<span>' + letters.join('</span><span>') + '</span>');
+                $spans = $(this).find('span');
+                setInterval(function() {
+                    $spans.each(gasFlame);
+                }, 100);
+            });
+        };
+
+
+    })(jQuery);
+
+    $(function() {
+        $('h1').ignite();
+    });
+  </script>
 </html>
