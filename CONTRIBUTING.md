@@ -6,6 +6,7 @@
 
 * Please add the essay file (as a PDF or other portable format) into the assets/essays directory.
 * In `essays.html`, add a new `<section>` tag to the `<main id="content">` tag. For example:
+
 Before:
 ```
   <main id="content">
