@@ -46,7 +46,7 @@ After:
 
 Follow the same procedure as essays.
 
-In `projects.html`:
+In `projects.html` (shoutout to Amanda Li for using appropriate formatting in her pull request):
 
 Before:
 ```
