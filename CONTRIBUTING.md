@@ -42,6 +42,50 @@ After:
   </main>
 ```
 
+## How to contribute projects
 
+Follow the same procedure as essays.
+
+In `projects.html` (shoutout to Amanda Li for using appropriate formatting in her pull request):
+
+Before:
+```
+  <main id="content">
+    <section id="section1">
+      <article>
+        <p>
+          The list of projects students are working on in this class with descriptions and links to GitHub repositories. To be completed once projects have begun.
+        </p>
+        <h4><a href="https://github.com/nzufelt/open_source_movement_csc630">The Class Website</a> by everyone</h4>
+        This project is making this website! It's a class effort to learn and contribute to open source projects.
+        <p>
+      </article>
+    </section>
+  </main>
+```
+
+After:
+```
+  <main id="content">
+    <section id="section1">
+      <article>
+        <p>
+          The list of projects students are working on in this class with descriptions and links to GitHub repositories. To be completed once projects have begun.
+        </p>
+        <h4><a href="https://github.com/nzufelt/open_source_movement_csc630">The Class Website</a> by everyone</h4>
+        This project is making this website! It's a class effort to learn and contribute to open source projects.
+        <p>
+      </article>
+    </section>
+    <section> 
+      <article>
+        <h4><a href="https://github.com/dabao12321/geolang">geolang</a> by Amanda Li</h4>
+        <p>
+          Correlating text to author's geographic origin within the U.S.
+        </p>
+      </article>
+    </section>
+  </main>
+```
 
 Please open a pull request with suggestions on how to change this document.
