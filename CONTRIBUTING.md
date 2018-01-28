@@ -42,14 +42,13 @@ After:
   </main>
 ```
 
-## How to contribute projects:
+## How to contribute projects
 
 Follow the same procedure as essays.
 
 In `projects.html`:
 
 Before:
-
 ```
   <main id="content">
     <section id="section1">
@@ -66,7 +65,6 @@ Before:
 ```
 
 After:
-
 ```
   <main id="content">
     <section id="section1">
