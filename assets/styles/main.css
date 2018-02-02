@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:500,700'); */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/IBM-type/0.5.3/css/ibm-type.min.css');
 
 * {
   padding: 0;
@@ -11,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   background-color: white;
 }
 
@@ -22,8 +23,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   display: inline;
+}
+
+code, pre {
+    font-family: "IBM Plex Mono", monospace;
 }
 
 main, footer {
@@ -64,7 +69,7 @@ header h1 a {
 
 header .right {
   float: right;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 13px;
 }
 
@@ -136,7 +141,7 @@ main.splash h1 {
 
 main.splash h3 {
   display: block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
   font-size: 20px;
   line-height: 30px;
   font-weight: normal;
