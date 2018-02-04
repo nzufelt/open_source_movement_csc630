@@ -2,10 +2,10 @@
 
 *For the code of conduct, see [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).*
 
-## How to contribute essays
+### How to contribute essays
 
 * Please add the essay file (as a PDF or other portable format) into the assets/essays directory.
-* In `essays.html`, add a new `<section>` tag to the `<main id="content">` tag. For example:
+* **Updated**: Our goal is to have each student add, in `essays.html`, a new `<section>` tag to the `<main id="content">` tag. For example:
 
 Before:
 ```
@@ -41,12 +41,11 @@ After:
     </section>
   </main>
 ```
+However, this will create tons of merge conflicts.  Instead, **what you should do** is take _just the new html code_ and add it to a new "snippet" in `assets/essay_snippets`.  There is an example there already.
 
-## How to contribute projects
+### How to contribute projects
 
-Follow the same procedure as essays.
-
-In `projects.html` (shoutout to Amanda Li for using appropriate formatting in her pull request):
+Follow the same procedure as essays, placing a snippet into `assets/project_snippets`.  Here's the format (shoutout to Amanda Li for an using appropriate format in her pull request!), in `projects.html`:
 
 Before:
 ```
@@ -77,7 +76,7 @@ After:
         <p>
       </article>
     </section>
-    <section> 
+    <section>
       <article>
         <h4><a href="https://github.com/dabao12321/geolang">geolang</a> by Amanda Li</h4>
         <p>
@@ -88,4 +87,7 @@ After:
   </main>
 ```
 
+Again, there's an example in the corresponding folder.
+
+## Improvements
 Please open a pull request with suggestions on how to change this document.
