@@ -1,4 +1,4 @@
-# Other's project week
+# Non Sibi Week
 
 During the week of **2/12-2/16**, your focus will not be on your own projects.  That is, you will spend the week working on another person's project as your main focus.  This is _not_ to say that you are working on it "as if it were your own", because _a)_ it's not, and _b)_ that would require a whole lot of permissions and frustrations.  Rather, you should pick (or be assigned to) a project and work to produce a large pull request, or multiple small ones.  This will constitute a significant part of your [Coherence/Organization, Collaboration, and Community](https://nzufelt.github.io/open_source_movement_csc630/assignments/Project.html) grades for your final project.
 
