@@ -181,6 +181,7 @@ main ul {
 }
 
 main ul li, main section {
+  list-style: circle;
   background-color: white;
   border: 1px solid #EBEBEB;
   margin-bottom: 20px;
@@ -212,12 +213,16 @@ main section ol li a {
   text-decoration: none;
   color: #923ADF;
 }
-
+/* change */
 main section ul li {
   border: none;
   padding: 0;
   display: block;
   margin-bottom: 0;
+}
+
+.bullets li {
+  display: list-item;
 }
 
 main ul li a:first-of-type {
@@ -256,4 +261,9 @@ footer {
 footer.stuck {
   position: absolute;
   bottom: 0;
+}
+
+.code {
+  font-family: "Courier", serif;
+  padding-left: 30px;
 }
