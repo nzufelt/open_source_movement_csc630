@@ -5,7 +5,7 @@ During the week of **2/12-2/16**, your focus will not be on your own projects.  
 ### The Rules
 1. Between Sunday, 2/11 11:59PM and Saturday, 2/17 00:00AM, you _cannot_ commit to your own repository.  The only activity you are allowed to complete on your own repository is accepting pull requests, or communications on Github.
 2. Your work on your assigned repository should be made in a good-faith effort to be at a similar level of quality to the work on your own repository
-3. Any attempts to subvert Other's Project Week by, for example, submitting a massive commit at 2/17 00:01AM will be noticed and reflected in your grade.
+3. Any attempts to subvert Non Sibi Week by, for example, submitting a massive commit at 2/17 00:01AM will be noticed and reflected in your grade.
 4. You also need to submit your usual, second weekly pull request which is not to your main assigned (classmate's) library.
 
 ### Suggestions
